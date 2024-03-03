@@ -1,0 +1,84 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+> -->
+    <!-- <testsuites>
+        <testsuite name="Unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory>tests/Feature</directory>
+        </testsuite>
+    </testsuites> -->
+    <!-- <source>
+        <include>
+            <directory>app</directory>
+        </include>
+    </source> -->
+    <!-- <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="TELESCOPE_ENABLED" value="false"/>
+    </php> -->
+<!-- </phpunit>  -->
+
+
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.0/phpunit.xsd"
+    backupGlobals="false"
+    colors="true"
+    bootstrap="bootstrap/app.php"
+>
+    <php>
+        <ini name="error_reporting" value="-1" />
+        <server name="APP_ENV" value="testing" />
+        <server name="BCRYPT_ROUNDS" value="4" />
+        <server name="CACHE_DRIVER" value="array" />
+        <server name="MAIL_MAILER" value="log" />
+        <server name="QUEUE_CONNECTION" value="sync" />
+        <server name="SESSION_DRIVER" value="array" />
+    </php>
+
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./app</directory>
+            <exclude>
+                <directory>./app/Http</directory>
+                <directory>./app/Providers</directory>
+                <directory>./app/Services</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./app</directory>
+        </include>
+    </coverage>
+
+    <listeners>
+        <listener class="Illuminate\Foundation\Testing\Listeners\BeforeClassHookListener">
+            <arguments>
+                <directory suffix="Test.php">./tests/Unit</directory>
+            </arguments>
+        </listener>
+    </listeners>
+</phpunit>

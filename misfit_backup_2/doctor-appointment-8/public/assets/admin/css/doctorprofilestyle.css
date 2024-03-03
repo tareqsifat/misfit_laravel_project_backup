@@ -1,0 +1,110 @@
+/* assets/admin/css/doctorprofilestyle.css */
+
+/* Remove top margin for the Doctor Profile section */
+
+/* public/css/styles.css */
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    border-radius:15px
+}
+
+.container {
+    max-width: 80%;
+}
+
+/* Add this style to your doctorprofilestyle.css file */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.dropdown button i {
+    color: white;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #3498db; /* Background color for the dropdown menu */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #2980b9; /* Background color on hover */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Doctor profile container styling */
+.doctor-profile-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Ensure positioning context for absolute positioning */
+}
+
+/* Doctor profile header styling */
+.doctor-profile-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+/* Doctor profile body styling */
+.doctor-profile-body {
+    padding: 20px;
+    position: absolute; /* Ensure positioning context for absolute positioning */
+}
+
+
+/* Edit profile button styling */
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .doctor-profile-body {
+        padding: 10px;
+    }
+ #doctor-profile {
+        transition: margin-left 0.3s ease; /* Add a smooth transition effect */
+    }
+
+#doctor-profile {
+        transition: margin-left 0.9s ease-in-out; /* Add transition for smooth effect */
+    }
+    .dropdown:hover + #doctor-profile,
+.dropdown:focus + #doctor-profile {
+    margin-left: 20px; /* Adjust the value as needed */
+}
+    /* Edit profile button styling */
+.btn-edit-profile {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+}
