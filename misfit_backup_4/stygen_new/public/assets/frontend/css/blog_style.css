@@ -1,0 +1,87 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    width: 100%;
+    color: #333333;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+a:hover {
+    text-decoration: none;
+    color: #613f99;
+}
+footer {
+    background: #eaeaea !important;
+}
+.newsletter-social-block-content {
+    border-top: none !important;
+    border-bottom: none !important;
+    padding: 3rem 0 !important;
+}
+.newsletter-form .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.newsletter-form input {
+    border: 1px solid #5e2e8787 !important;
+    color: #000 !important;
+    padding: 10px !important;
+    height: 35px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.newsletter-form input {
+    width: 100%;
+    border: 1px solid #eee;
+    color: #333;
+    border-radius: 3px;
+    padding: 12px;
+    height: 48px;
+}
+.newsletter-form button {
+    background: #5e2e87 !important;
+    border-bottom: 3px solid #613f99 !important;
+    border-radius: 0 0px 3px 0 !important;
+    height: 35px !important;
+    padding: 8px 10px !important;
+    color: white;
+}
+.single-footer-wiedget .link-widget > li {
+    display: block;
+    line-height: 35px;
+    list-style: none;
+}
+.single-footer-wiedget .link-widget > li > a {
+    font-size: 15px;
+    color: #333;
+    text-transform: capitalize;
+    display: inline-block;
+    font-weight: 400;
+}
+.footer-bottom-area {
+    background: #333;
+    padding: 25px 0;
+}
+.footer-bottom-area p {
+    color: white;
+}
+.product-price {
+    font-size: 16px;
+    color: #3ea89f;
+    font-weight: 500;
+}
+.product-price:hover {
+    font-size: 16px;
+    color: #ff6a00;
+    font-weight: 500;
+}
+

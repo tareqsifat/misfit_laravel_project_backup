@@ -1,0 +1,393 @@
+@media (min-width: 1367px) and (max-width: 1920px) {}
+
+@media (max-width: 2500px) {
+    /* .food-img-bg {
+        left: 1010px;
+    } */
+}
+
+@media (max-width: 2200px) {}
+
+@media (max-width: 1580px) {}
+
+@media (max-width: 1480px) {}
+
+@media (max-width: 1399px) {
+    .element-1 {
+        left: -220px;
+    }
+
+    .element-2 {
+        left: -160px;
+    }
+
+    .food-img-1 {
+        right: 200px;
+        width: 410px;
+    }
+
+    .element-7 {
+        right: 280px;
+    }
+
+    .element-10 {
+        right: 150px;
+    }
+
+    .element-12 {
+        right: 200px;
+    }
+
+    .food-img-2 {
+        right: -10px;
+    }
+
+    .element-8 {
+        right: 60px;
+    }
+
+    .element-11 {
+        top: 220px;
+    }
+}
+
+@media(max-width:1300px) {}
+
+@media (max-width: 1199px) {
+    .food-img-bg {
+        left: 500px;
+    }
+
+    .food-img-1 {
+        right: 170px;
+        width: 340px;
+    }
+
+    .element-4 {
+        top: 180px;
+        left: 290px;
+    }
+
+    .totalOrdersChartBody {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .totalOrdersChartWrapper {
+        width: 300px;
+        min-width: 300px;
+    }
+
+    #totalOrdersChart {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .orderSummaryWrapper>div:first-child {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .SCSummary>div:first-child {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+@media(max-width:1150px) {
+    .sc-column .sc-label {
+        left: -27px;
+        width: 100px;
+    }
+
+    .dbrdTabs {
+        gap: 5px;
+        /* min-width: auto; */
+    }
+
+}
+
+@media(max-width:1023px) {}
+
+@media (max-width: 991px) {
+    .food-img-bg {
+        display: none;
+    }
+
+    .element-12 {
+        right: 170px;
+    }
+
+    .login-logo {
+        margin-bottom: 20px;
+    }
+
+    .logo_icon {
+        display: none;
+    }
+
+    .food-img-1 {
+        right: -70px;
+        width: 300px;
+    }
+
+    .element-9 {
+        top: 0px;
+        right: -100px;
+        width: 190px;
+    }
+
+    .element-11 {
+        display: none;
+    }
+
+    .food-img-2 {
+        display: none;
+    }
+
+    .element-8 {
+        display: none;
+    }
+
+    .element-10 {
+        right: 80px;
+        width: 100px;
+    }
+
+    .element-7 {
+        display: none;
+    }
+
+    .element-4 {
+        left: 330px;
+    }
+}
+
+@media (max-width: 799px) {
+    .totalOrdersChartWrapper {
+        width: 255px;
+        min-width: 255px;
+    }
+}
+
+@media (max-width: 767px) {
+    .food-img-1 {
+        display: none;
+    }
+
+    /* .login-main-container {
+        justify-content: center;
+    } */
+    .menu-trigger {
+        display: block;
+    }
+
+    .element-12 {
+        right: -60px;
+    }
+
+    .element-4 {
+        left: 480px;
+    }
+
+    .element-10 {
+        display: none;
+    }
+
+    .element-6 {
+        top: -5px;
+        left: 250px;
+    }
+
+    .totalOrdersChartWrapper {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .card-topbar {
+        flex-wrap: wrap;
+    }
+
+    .card-topbar-title {
+        width: 100%;
+        text-align: center;
+        line-height: 22px;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+
+    .card-common-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .total-info-card {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-topbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-topbar-justify-center {
+        justify-content: center;
+    }
+
+    /* .batch-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    } */
+
+    /* .card-topbar-inner {
+        flex-wrap: wrap;
+    } */
+
+
+}
+
+@media (max-width: 576px) {
+    .sidebar.menuClosed {
+        width: 0px;
+        min-width: 0px;
+        overflow: hidden;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    body.bodyClosed {
+        padding-left: 15px;
+    }
+
+    body.bodyClosed header#page-topbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sidebar {
+        padding-left: 5px;
+        width: 220px;
+        min-width: 220px;
+    }
+
+    .sidebar-nav ul {
+        padding-right: 5px;
+    }
+
+    header#page-topbar {
+        padding-left: 10px;
+    }
+
+    body.bodyClosed .icon-trigger {
+        display: block;
+    }
+
+    body.bodyClosed .cross {
+        display: none;
+    }
+
+    .icon-trigger {
+        display: none;
+    }
+
+    .cross {
+        display: block;
+    }
+
+    .main-content-container {
+        padding-left: 0;
+    }
+
+    /* body {
+        padding-left: 15px;
+    } */
+
+    body.bodyClosed {
+        padding-left: 15px;
+    }
+
+    .main-container {
+        padding-right: 15px;
+    }
+
+    header#page-topbar {
+        padding-right: 15px;
+    }
+
+    .dashboard-footer {
+        width: 100%;
+    }
+
+    /* .batch-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    } */
+    .login-wrapper {
+        min-width: auto;
+        position: relative;
+        z-index: 50;
+    }
+
+    .dataTables_wrapper {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .addressWrapper {
+        display: none;
+    }
+
+    .total-info-card-number {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .common-title {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .dashboard-footer {
+        width: calc(100% + 80px);
+        margin-left: -80px;
+    }
+
+    body.bodyClosed header#page-topbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header#page-topbar {
+        padding-right: 15px;
+    }
+
+    .container-login {
+        height: auto;
+        min-height: auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+}
+
+@media (max-width: 400px) {
+    .dbrdTabs.nav-pills .nav-link {
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: 13px;
+    }
+
+    .socail-link {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

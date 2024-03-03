@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Bootstrap LightBox Example</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.css">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.js"></script>
+
+  <style type="text/css">
+
+    .lightbox{
+
+      z-index: 1041;
+
+    }
+
+    .small-img{
+
+      width: 100px;height: 100px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+
+  <h2>Bootstrap LightBox Example</h2>
+
+
+
+  <a data-toggle="lightbox" href="#demoLightbox">
+
+    <img src="https://dummyimage.com/600x400/000/fff" class="small-img">
+
+  </a>
+
+  <div id="demoLightbox" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class='lightbox-dialog'>
+
+        <div class='lightbox-content'>
+
+            <img src="https://dummyimage.com/600x400/000/fff">
+
+            <div class='lightbox-caption'>
+
+                Write here your caption here
+
+            </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+
+
+  <a data-toggle="lightbox" href="#demoLightbox2">
+
+    <img src="https://dummyimage.com/600x500/000/fff" class="small-img">
+
+  </a>
+
+  <div id="demoLightbox2" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class='lightbox-dialog'>
+
+        <div class='lightbox-content'>
+
+            <img src="https://dummyimage.com/600x500/000/fff">
+
+            <div class='lightbox-caption'>
+
+                Write here your caption here
+
+            </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+ 
+
+</div>
+
+
+
+</body>
+
+</html>

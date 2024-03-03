@@ -1,0 +1,10 @@
+{
+    "build_version" : "3",
+    "root_path" : "source-code",
+    "code_path" : {
+        "routes" : "document",
+        "resources" : "document",
+        "config" : "document",
+        "app" : "document"
+    }
+}

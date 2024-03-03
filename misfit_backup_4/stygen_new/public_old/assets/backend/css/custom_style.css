@@ -1,0 +1,207 @@
+/*----------Custom Style Here----------*/
+
+/*---------Common List Vue Start---------*/
+.el-dialog__footer {
+    padding-top: 0px !important;
+}
+.el-dialog__body {
+    padding-top: 0px !important;
+}
+.el-dialog__title {
+    font-weight: 600 !important;
+}
+.el-select {
+    width: 100% !important;
+}
+.el-form-item__label {
+    line-height: 20px !important;
+}
+
+.search-button{
+    border-color: #80bdff !important;
+}
+
+/* Number Arrow Remove for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Number Arrow Remove for Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/*---------Common List Vue End---------*/
+
+/*---------Attribute List Vue Start---------*/
+.attr-value .el-form-item__content {
+    margin-top: 26px !important;
+}
+@media only screen and (max-width: 767px){
+    .attr-value .mobile-screen{
+        display: block !important;
+    }
+    .attr-value .large-screen{
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .attr-value .mobile-screen{
+        display: none !important;
+    }
+    .attr-value .large-screen{
+        display: block !important;
+    }
+}
+/*---------Attribute List Vue End---------*/
+
+/*---------Product Create Vue Start---------*/
+#product_create .vux-uploader .vux-uploader_hd {
+    padding-bottom: 0 !important;
+}
+#product_create .vux-uploader .vux-uploader_bd .vux-uploader_input-box {
+    width: 110px !important;
+    height: 110px !important;
+}
+#product_create .vux-uploader_files .vux-uploader_file {
+    border: 1px solid #d9d9d9 !important;
+    width: 110px !important;
+    height: 110px !important;
+    margin-top: 0px !important;
+}
+#product_create .vux-uploader {
+    padding: 0px 0px !important;
+}
+#product_create .vux-uploader .vux-uploader_hd .vux-uploader_info {
+    display: none !important;
+}
+#product_create .vux-uploader .vux-uploader_bd {
+    overflow: visible !important;
+    margin-left: 0px !important;
+}
+#product_create .goBtn label{
+    color: #ffffff !important;
+}
+/*---------Product Create Vue End---------*/
+
+/*---------Product Edit Vue Start---------*/
+#product_edit .vux-uploader .vux-uploader_hd {
+    padding-bottom: 0 !important;
+}
+#product_edit .vux-uploader .vux-uploader_bd .vux-uploader_input-box {
+    width: 110px !important;
+    height: 110px !important;
+}
+#product_edit .vux-uploader_files .vux-uploader_file {
+    border: 1px solid #d9d9d9 !important;
+    width: 110px !important;
+    height: 110px !important;
+    margin-top: 0px !important;
+}
+#product_edit .vux-uploader {
+    padding: 0px 0px !important;
+}
+#product_edit .vux-uploader .vux-uploader_hd .vux-uploader_info {
+    display: none !important;
+}
+#product_edit .vux-uploader .vux-uploader_bd {
+    overflow: visible !important;
+    margin-left: 0px !important;
+}
+#product_edit .goBtn label{
+    color: #ffffff !important;
+}
+legend.product-seo-legend {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+}
+span.title-input-count {
+    margin: -50px !important;
+    opacity: 0.8 !important;
+}
+/*---------Product Edit Vue End---------*/
+
+/*---------Order Details Start---------*/
+#order_details p{
+    line-height: 10px !important;
+}
+#order_details .table-section .table td, .table th {
+    padding: 5px 5px !important;
+}
+#order_details .invoice_address{
+    line-height: 15px !important;
+}
+/*---------Order Details End---------*/
+
+
+/* ---Loader Css--- */
+.loader-css {
+    height: 0;
+    width: 0;
+    z-index: 999;
+    padding: 25px;
+    border: 6px solid #5e2e87d9;
+    border-right-color: #5e2e877d;
+    border-radius: 40px;
+    -webkit-animation: rotate 1s infinite linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+/* ------- Collection Section Start ------ */
+.collectionProductList {
+    border-left: solid 1px #e6e6e6 !important;
+}
+div#collection_list .card-header.border-0 {
+    background: #573276fa;
+    color: #fff;
+}
+div#collection_set_edit .productImgCheckbox{
+    background: #f0f3f6;
+    width: 20px;
+    height: 20px;
+    border: solid 2px #e3e3e3;
+    border-radius: 50% !important;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transition: .3s ease-in-out all;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.productImgCheckbox:checked{
+    box-shadow: 0 2px 4px 0 rgb(219 215 215 / 50%) !important;
+    border: solid 2px #3057d5 !important;
+}
+/* ------- Collection Section End ------ */
+
+/* ---Seller Login & Register--- */
+div#seller_login {
+    height: 100vh;
+    background-color: #c9b6dac9;
+}
+div#seller_register {
+    height: 100vh;
+    background-color: #c9b6dac9;
+}
+div#seller_forgot_password {
+    height: 100vh;
+    background-color: #c9b6dac9;
+}
+div#seller_reset_password {
+    height: 100vh;
+    background-color: #c9b6dac9;
+}
+/* ---Seller Login & Register--- */
+
+.product-seo-fieldset{
+    padding: 20px !important;
+    border: 1px solid #dcdada !important;
+}
