@@ -1,0 +1,89 @@
+.st_dashboard_wrapper {
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    .left_navbar {
+        &.active {
+            width: 350px !important;
+            overflow-x: auto;
+        }
+        transition-duration: 0.3s;
+        width: 350px;
+        background-color: #2f3349 !important;
+        overflow-x: auto;
+        @media screen and (max-width: 600px) {
+            width: 0px;
+        }
+        #main-menu-navigation {
+            margin-top: 50px;
+            list-style-type: none;
+            padding-left: 0px;
+            li {
+                .nested_list_sidebar {
+                    display: none;
+                    margin-top: 10px;
+                    list-style-type: none;
+                    padding-left: 20px;
+                    &.active {
+                        display: block;
+                    }
+                    li {
+                        a {
+                            display: block;
+                            padding: 15px 30px 15px 40px;
+                            border-bottom: 1px solid #10558d;
+                            align-items: center;
+                            color: rgb(241, 237, 237);
+                            font-size: 20px;
+                            i {
+                                font-size: 18px;
+                                padding-right: 5px;
+                            }
+                            span {
+        
+                            }
+                        }
+                        a:hover {
+                            color: #0c7db1;
+                            background:white;
+                            border-right: 2px solid rgb(5, 68, 104);
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                    padding: 15px 30px 15px 40px;
+                    border-bottom: 1px solid #10558d;
+                    align-items: center;
+                    color: rgb(241, 237, 237);
+                    font-size: 20px;
+                    i {
+                        font-size: 18px;
+                        padding-right: 5px;
+                    }
+                    span {
+
+                    }
+                }
+                a:hover {
+                    color: #0c7db1;
+                    background:white;
+                    border-right: 2px solid rgb(5, 68, 104);
+                }
+            }
+        }
+    }
+    .st_content {
+        flex: 1;
+        overflow-x: auto;
+        .card {
+            @media screen and (max-width: 600px) {
+                .dashboard_header {
+                    padding: 6px 0px 6px 0px;
+                }
+            }
+        }
+        
+    }
+}

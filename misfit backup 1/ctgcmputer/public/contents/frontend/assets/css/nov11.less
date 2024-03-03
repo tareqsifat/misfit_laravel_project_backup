@@ -1,0 +1,47 @@
+.stock_alert {
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ef4a23;
+}
+
+.product-item-title {
+    a {
+        font-weight: 500;
+    }
+}
+
+.product_row.category_product_row {
+    grid-template-columns: repeat(auto-fit, minmax(222px, 222px));
+}
+
+.related_product {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+
+    .product_name {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        a{
+            &:hover{
+                color: #ef4a23;
+            }
+        }
+    }
+
+    .product_price {
+        color: #ef4a23;
+    }
+}
+
+.latest_news .marquee_body marquee {
+    font-size: 15px;
+    line-height: 30px;
+    height: 24px;
+}
+

@@ -1,0 +1,101 @@
+.product-categories-area {
+    margin-top: 30px;
+
+    .section_content {
+        .featured_items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(182px, 1fr));
+            justify-content: center;
+
+            @include xs() {
+                grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+            }
+
+            .item {
+                height: 120px;
+                width: 100%;
+                border: 1px solid var(--color_border);
+                padding: 10px;
+                text-align: center;
+
+                a {
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+
+                    .product-category-thumb {
+                        height: 70px;
+                        width: 70px;
+                        background-color: var(--bg_body);
+                        text-align: center;
+                        border-radius: 50%;
+                        margin: auto;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            transform: scale(.8);
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &:hover {
+                        .product-category-thumb {
+                            img {
+                                -webkit-animation: policy 1.2s linear;
+                                animation: policy 1.2s linear;
+                            }
+                        }
+                    }
+
+                    .product-category-title {
+                        font-size: 16px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section_content {
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.top_bar {
+    border-bottom: 1px solid var(--bs-dark);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    background-color: var(--bg_body);
+
+    .navigation_links {
+        a {
+            background: #10355a;
+            color: white;
+        }
+    }
+}
+
+.section_heading {
+    font-size: 18px;
+    font-family: va;
+    font-family: var(--inter_500);
+    padding-left: 30px;
+    line-height: 28px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #10355a;
+    color: navajowhite;
+    color: var(--white);
+    clip-path: polygon(0% 0%, 79% 0%, 100% 100%, 0% 100%);
+    padding-right: 84px;
+
+    &.no_border {
+        border-bottom: unset;
+    }
+}

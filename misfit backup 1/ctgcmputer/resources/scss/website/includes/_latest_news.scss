@@ -1,0 +1,18 @@
+.latest_news {
+    // background-color: #f2f4f8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .marquee_body {
+        padding: 4px 20px 1px;
+        background-color: white;
+        border-radius: 25px;
+
+        marquee {
+            font-size: 15px;
+            line-height: 30px;
+            height: 24px;
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+Coding Ans:
+
+Ans 1. 
+<?php
+
+$nums = [0,1,0,3,12];
+
+$length = count($nums);
+
+for($i = 0; $i < $length; $i++){
+    if($nums[$i] == 0){
+        unset($nums[$i]);
+    }
+    array_push($nums, 0);
+}
+
+
+Ans 3.
+
+$s = "the sky is blue";
+
+$arr = explode(' ', $s);
+$arr = array_reverse($arr);
+// print_r($arr);
+
+$result = "";
+foreach($arr as $a){
+    $result = $result . $a . " ";
+}
+
+echo trim($result);
+
+Ans 4.
+
+
+$data = [
+    ['id' => 1, 'manager_id' => null, 'name' => 'CEO'],
+    ['id' => 2, 'manager_id' => 1, 'name' => 'CTO'],
+    ['id' => 3, 'manager_id' => 1, 'name' => 'CFO'],
+    ['id' => 4, 'manager_id' => 2, 'name' => 'Lead Engineer'],
+    ['id' => 5, 'manager_id' => 2, 'name' => 'UI/UX Designer'],
+    ['id' => 6, 'manager_id' => 3, 'name' => 'Accountant']
+
+];
+?>
+
+<ul>
+    <?php if($data['manager_id' == null]) {?>
+        <li><?php echo $data['name'] ?></li>
+    <?php } if($data['manager_id' == 1]) {?>
+        <li>
+            <ul>
+                <li>CTO</li>
+            </ul>
+        </li>
+    <?php } if($data['manager_id' == 1]) ?> 
+</ul>
+
+
+
+
+

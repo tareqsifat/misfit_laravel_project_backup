@@ -1,0 +1,108 @@
+.top_header {
+    background-color: #0b2239;
+    padding: 10px 0px;
+
+    @include custom_media(0px, 575.9px){
+        padding: 5px 0px;
+    }
+
+    .header_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media (max-width: 574.9px) {
+            display: grid;
+            justify-content: center;
+            gap: 0;
+        }
+
+        .s_links {
+            display: flex;
+            gap: 15px;
+            height: 100%;
+            align-items: center;
+
+            li {
+                a {
+                    height: 28px;
+                    width: 28px;
+                    font-size: 14px;
+                    color: var(--white);
+                    text-align: center;
+                    line-height: 26px;
+                    border-radius: 50%;
+                    background-color: rgba(0, 0, 0, 0.3019607843);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    &:hover{
+                        color: var(--color_default);
+                    }
+                }
+            }
+        }
+
+        .header_right_links {
+            border: 2px solid rgba(255, 255, 255, .3);
+            display: flex;
+            gap: 20px;
+            border-radius: 25px;
+            padding: 5px 28px;
+
+            li {
+                a {
+                    color: var(--white);
+                    font-size: 14px;
+                    font-family: var(--inter_300);
+
+                    &:hover {
+                        color: var(--color_default);
+                    }
+                }
+
+                position: relative;
+
+                &::before {
+                    content: "|";
+                    position: absolute;
+                    right: -12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: var(--white);
+                }
+
+                &:last-child {
+                    &::before {
+                        content: "";
+                    }
+                }
+            }
+        }
+
+        .mid {
+            flex: 1;
+
+            @include custom_media(0px, 575.9px){
+                display: none;
+            }
+
+            .web_heading {
+                color: var(--white);
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+                line-height: 35px;
+                text-transform: uppercase;
+                font-family: var(--inter_300);
+            }
+        }
+
+        .right{
+            @include custom_media(0px, 575.9px){
+                display: none;
+            }
+        }
+    }
+}
+
+

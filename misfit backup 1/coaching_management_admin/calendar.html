@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Month-wise Calendar with Vue.js</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include Vue.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app" class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <h2>Calendar</h2>
+          <ul class="list-group">
+            <li class="list-group-item"
+              :class="{ active: selectedMonth === month.name }"
+              v-for="(month, index) in months"
+              :key="index"
+              @click="selectMonth(month)">
+              {{ month.name }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="calendar">
+          <div class="calendar-header">
+            <h2>{{ selectedMonth }} {{ selectedYear }}</h2>
+            <div class="month-selector">
+              <label for="month">Select Month:</label>
+              <input type="month" id="month" v-model="selectedMonthYear" @change="updateMonth">
+            </div>
+          </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th v-for="day in days" :key="day">{{ day }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(week, weekIndex) in calendar" :key="weekIndex">
+                <td v-for="(day, dayIndex) in week" :key="dayIndex">
+                  <span v-if="day !== null">{{ day }}</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Create a new Vue instance
+    new Vue({
+      el: '#app',
+      data: {
+        days: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        selectedMonth: '',
+        selectedYear: '',
+        selectedMonthYear: '',
+        calendar: [],
+        months: [
+          { name: 'January', value: '01' },
+          { name: 'February', value: '02' },
+          { name: 'March', value: '03' },
+          { name: 'April', value: '04' },
+          { name: 'May', value: '05' },
+          { name: 'June', value: '06' },
+          { name: 'July', value: '07' },
+          { name: 'August', value: '08' },
+          { name: 'September', value: '09' },
+          { name: 'October', value: '10' },
+          { name: 'November', value: '11' },
+          { name: 'December', value: '12' }
+        ]
+      },
+      mounted() {
+        const currentDate = new Date();
+        const month = currentDate.getMonth();
+        const year = currentDate.getFullYear();
+        this.selectedMonth = this.months[month].name;
+        this.selectedYear = String(year);
+        this.selectedMonthYear = `${year}-${this.months[month].value}`;
+        this.generateCalendar();
+      },
+      methods: {
+        generateCalendar() {
+          const monthObj = this.months.find(month => month.name === this.selectedMonth);
+          const numDaysInMonth = new Date(this.selectedYear, monthObj.value, 0).getDate();
+
+          const firstDayOfMonth = new Date(this.selectedYear, this.getMonthIndex(this.selectedMonth), 1);
+          const firstDayOfWeek = (firstDayOfMonth.getDay() + 1) % 7; // Adjusted to start with Sunday
+
+          const prevMonthDays = (firstDayOfWeek === 0) ? 6 : firstDayOfWeek - 1;
+
+          const totalDays = prevMonthDays + numDaysInMonth;
+          const numRows = Math.ceil(totalDays / 7);
+
+          let dayCounter = 1;
+          this.calendar = [];
+
+          for (let i = 0; i < numRows; i++) {
+            let week = [];
+            for (let j = 0; j < 7; j++) {
+              if (i === 0 && j < prevMonthDays) {
+                week.push(null);
+              } else if (dayCounter > numDaysInMonth) {
+                week.push(null);
+              } else {
+                week.push(dayCounter);
+                dayCounter++;
+              }
+            }
+            this.calendar.push(week);
+          }
+        },
+        selectMonth(month) {
+          this.selectedMonth = month.name;
+          this.selectedMonthYear = `${this.selectedYear}-${month.value}`;
+          this.generateCalendar();
+        },
+        updateMonth() {
+          const [selectedYear, selectedMonth] = this.selectedMonthYear.split('-');
+          this.selectedYear = selectedYear;
+          this.selectedMonth = this.months.find(month => month.value === selectedMonth).name;
+          this.generateCalendar();
+        },
+        getMonthIndex(month) {
+          return this.months.findIndex(m => m.name === month);
+        }
+      },
+      watch: {
+        selectedMonthYear() {
+          this.updateMonth();
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

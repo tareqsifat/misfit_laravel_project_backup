@@ -1,0 +1,321 @@
+/* color veriable */
+/* dark_mode_color */
+/* font name */
+/* border */
+.balance_sheet {
+    border: 0px solid red;
+    width: 630px;
+    margin: auto;
+}
+.balance_sheet .balance_sheet_content {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .header_area_full {
+    border: 0px solid red;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.balance_sheet .balance_sheet_content .header_area_full .header_area {
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.balance_sheet .balance_sheet_content .header_area_full .header_area .page_title {
+    border: 0px solid red;
+    margin-bottom: 14px;
+}
+.balance_sheet .balance_sheet_content .header_area_full .header_area .page_title .title_text {
+    font-size: 35px;
+    line-height: 35px;
+    font-family: 'Poppins-Bold';
+}
+.balance_sheet .balance_sheet_content .header_area_full .header_area .logo_area {
+    border: 0px solid red;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 14px;
+}
+.balance_sheet .balance_sheet_content .header_area_full .header_area .logo_area img {
+    border: 0px solid red;
+    width: 100%;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area {
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer {
+    border: 0px solid red;
+    flex: 1;
+    margin-right: 100px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer .invoice_name {
+    border: 0px solid red;
+    margin-bottom: 8px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer .invoice_name .invoice_text {
+    border: 0px solid red;
+    font-size: 22px;
+    font-family: 'Poppins-SemiBold';
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer .customar_name_address {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer .customar_name_address .customar_name {
+    border: 0px solid red;
+    margin-bottom: 8px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer .customar_name_address .customar_name .name_text {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer .customar_name_address .customar_address {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer .customar_name_address .customar_address .address_text_area {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer .customar_name_address .customar_address .address_text_area .address_text {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 13px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area {
+    border: 0px solid red;
+    flex: 1;
+    margin-left: 100px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .invoice_id_area {
+    border: 0px solid red;
+    display: flex;
+    margin-bottom: 8px;
+    justify-content: space-between;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .invoice_id_area .invoice_title {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .invoice_id_area .invoice_title .title_text {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .invoice_id_area .invoice_id {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .invoice_id_area .invoice_id .id_text {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 13px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .date_area {
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .date_area .date_title {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .date_area .date_title .title_text {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .date_area .date_number {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .invoice_id_date_area .date_area .date_number .date_text {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 14px;
+}
+.balance_sheet .balance_sheet_content .product_item_area {
+    border: 0px solid red;
+    margin: 28px 0px;
+    border-bottom: 1px solid black;
+}
+.balance_sheet .balance_sheet_content .product_item_area table {
+    border: 0px solid red;
+    width: 100%;
+}
+.balance_sheet .balance_sheet_content .product_item_area table thead {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .product_item_area table thead tr {
+    border: 0px solid red;
+    border: 3px solid orange;
+}
+.balance_sheet .balance_sheet_content .product_item_area table thead tr th {
+    border: 0px solid red;
+    font-size: 14px;
+    font-family: 'Poppins-Regular';
+    padding: 5px;
+}
+.balance_sheet .balance_sheet_content .product_item_area table thead tr .price {
+    width: 80px;
+}
+.balance_sheet .balance_sheet_content .product_item_area table thead tr .qty {
+    width: 80px;
+}
+.balance_sheet .balance_sheet_content .product_item_area table thead tr .total {
+    width: 80px;
+}
+.balance_sheet .balance_sheet_content .product_item_area table tbody {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .product_item_area table tbody tr {
+    border: 0px solid red;
+    border-bottom: 1px solid black;
+}
+.balance_sheet .balance_sheet_content .product_item_area table tbody tr td {
+    border: 0px solid red;
+    font-size: 13px;
+    font-family: 'Poppins-Regular';
+    padding: 16px 5px 16px 7px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area {
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area {
+    border: 0px solid red;
+    flex: 1;
+    margin-right: 50px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .thank_area {
+    border: 0px solid red;
+    margin-bottom: 20px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .thank_area .thank_title {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 13px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .payment_info_area {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .payment_info_area .payment_info_title_area {
+    border: 0px solid red;
+    margin-bottom: 10px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .payment_info_area .payment_info_title_area .payment_info_title {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .payment_info_area .payment_info_content {
+    border: 0px solid red;
+    display: flex;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .payment_info_area .payment_info_content .info_title {
+    border: 0px solid red;
+    width: 100px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .payment_info_area .payment_info_content .info_title .text {
+    border: 0px solid red;
+    font-size: 12px;
+    font-family: "Poppins-Regular";
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .payment_info_area .payment_info_content .info_value {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .left_area .payment_info_area .payment_info_content .info_value .text {
+    border: 0px solid red;
+    font-size: 12px;
+    font-family: "Poppins-Regular";
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area {
+    border: 0px solid red;
+    width: 200px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start .total_content_area {
+    border: 0px solid red;
+    display: flex;
+    margin-bottom: 5px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start .total_content_area .content_title {
+    border: 0px solid red;
+    width: 100px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start .total_content_area .content_title .text {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 13px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start .total_content_area .content_value {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start .total_content_area .content_value .text {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 13px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start .total_amount_area {
+    border: 0px solid red;
+    padding-top: 3px;
+    border-top: 1px solid black;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start .total_amount_area .content_title .text {
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+}
+.balance_sheet .balance_sheet_content .thank_and_payment_and_total_area .right_area .total_area_start .total_amount_area .content_value .text {
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+}
+.balance_sheet .balance_sheet_content .terms_and_condition_area_and_signeture_area {
+    border: 0px solid red;
+    display: flex;
+}
+.balance_sheet .balance_sheet_content .terms_and_condition_area_and_signeture_area .terms_and_condition_area {
+    border: 0px solid red;
+    flex: 1;
+}
+.balance_sheet .balance_sheet_content .terms_and_condition_area_and_signeture_area .terms_and_condition_area .title {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .terms_and_condition_area_and_signeture_area .terms_and_condition_area .title .title_text {
+    border: 0px solid red;
+    color: black;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.balance_sheet .balance_sheet_content .terms_and_condition_area_and_signeture_area .terms_and_condition_area .text_area {
+    border: 0px solid red;
+}
+.balance_sheet .balance_sheet_content .terms_and_condition_area_and_signeture_area .terms_and_condition_area .text_area .text {
+    border: 0px solid red;
+    font-size: 12px;
+    font-family: 'Poppins-Regular';
+}
+.balance_sheet .balance_sheet_content .terms_and_condition_area_and_signeture_area .signeture_area {
+    border: 0px solid red;
+    width: 320px;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 56px;
+    border-top: 2px solid black;
+}
+.balance_sheet .balance_sheet_content .terms_and_condition_area_and_signeture_area .signeture_area .signeture_title {
+    border: 0px solid red;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+    margin-top: 10px;
+}
+.balance_sheet .balance_sheet_content .bottom_bg_area {
+    height: 30px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

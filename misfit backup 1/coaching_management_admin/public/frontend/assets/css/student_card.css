@@ -1,0 +1,154 @@
+.student_card {
+    
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+.student_card .student_card_content {
+    
+    padding: 7px;
+    width: 255px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.student_card .student_card_content .school_logo {
+    
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 15px;
+}
+.student_card .student_card_content .school_logo img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.student_card .student_card_content .school_name_area {
+    
+    margin: 5px 0px;
+}
+.student_card .student_card_content .school_name_area .school_name_text {
+    
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Poppins-SemiBold';
+}
+.student_card .student_card_content .address_area {
+    
+}
+.student_card .student_card_content .address_area .address_text {
+    
+    font-size: 12px;
+    font-family: 'Poppins-Regular';
+}
+.student_card .student_card_content .phone_number_area {
+    
+}
+.student_card .student_card_content .phone_number_area .phone_number_text {
+    
+    font-size: 12px;
+    font-family: 'Poppins-Regular';
+}
+.student_card .student_card_content .student_image_area {
+    
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.student_card .student_card_content .student_image_area img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.student_card .student_card_content .student_id_card_title_area {
+    background-color: #c00000;
+    width: 135px;
+    border-radius: 4px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.student_card .student_card_content .student_id_card_title_area .student_id_card_title_text {
+    
+    font-size: 13px;
+    line-height: 13px;
+    padding: 3px 0px;
+    font-family: 'Poppins-SemiBold';
+    color: white;
+}
+.student_card .student_card_content .student_information_area {
+    
+    width: 225px;
+    margin: auto;
+}
+.student_card .student_card_content .student_information_area .student_information_content {
+    
+    display: flex;
+}
+.student_card .student_card_content .student_information_area .student_information_content .information_title {
+    
+}
+.student_card .student_card_content .student_information_area .student_information_content .information_title .title_text {
+    
+    font-size: 12px;
+    font-family: 'Poppins-Regular';
+    margin-right: 5px;
+    width: 92px;
+    text-align: left;
+    justify-content: space-between;
+    display: flex;
+}
+.student_card .student_card_content .student_information_area .student_information_content .information_title .title_text .text {
+    
+}
+.student_card .student_card_content .student_information_area .student_information_content .information_title .title_text .samecolon {
+    
+}
+.student_card .student_card_content .student_information_area .student_information_content .information_value {
+    
+}
+.student_card .student_card_content .student_information_area .student_information_content .information_value .value_text {
+    
+    font-size: 12px;
+    font-family: 'Poppins-Medium';
+}
+.student_card .student_card_content .scanning_and_principal_signature_area {
+    
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+.student_card .student_card_content .scanning_and_principal_signature_area .scanning_area {
+    
+    width: 130px;
+    height: 30px;
+    margin-top: 22px;
+}
+.student_card .student_card_content .scanning_and_principal_signature_area .scanning_area img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.student_card .student_card_content .scanning_and_principal_signature_area .principal_signature_area {
+    
+    margin-top: 37px;
+}
+.student_card .student_card_content .scanning_and_principal_signature_area .principal_signature_area .principal_signature_area_text {
+    
+    font-size: 13px;
+    font-family: 'Poppins-Regular';
+}
