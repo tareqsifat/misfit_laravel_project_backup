@@ -1,0 +1,26 @@
+.booltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .booltip .booltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(134, 98, 98);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the booltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .booltip:hover .booltiptext {
+    visibility: visible;
+  }
